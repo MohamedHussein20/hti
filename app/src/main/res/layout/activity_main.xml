@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#001F84"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        app:layout_constraintStart_toStartOf="@id/appBar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="RouteAppOne"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/androidimg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:adjustViewBounds="true"
+        android:src="@drawable/android"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        />
+    <Button
+        android:backgroundTint="#1C3BE6"
+        android:text="ANDROID COURSE"
+        android:textSize="20sp"
+        android:id="@+id/androidbutton"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/androidimg"
+        android:layout_marginVertical="10dp"
+        />
+    <ImageView
+        android:id="@+id/iosimg"
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ios"
+        app:layout_constraintTop_toBottomOf="@id/androidbutton"
+        />
+    <Button
+        android:backgroundTint="#1C3BE6"
+        android:text="IOS COURSE"
+        android:textSize="20sp"
+        android:id="@+id/iosbutton"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iosimg"
+        android:layout_marginVertical="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/fullimg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/full"
+        app:layout_constraintTop_toBottomOf="@id/iosbutton"
+        />
+    <Button
+        android:backgroundTint="#1C3BE6"
+        android:text="FULL STACK"
+        android:textSize="20sp"
+        android:id="@+id/fullbutton"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fullimg"
+        android:layout_marginVertical="10dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
